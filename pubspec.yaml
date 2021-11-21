@@ -14,6 +14,9 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
+  flutter_native_splash: ^1.3.1
+  google_mobile_ads: ^0.13.6
+  shared_preferences: ^2.0.8
 
 dev_dependencies:
   flutter_test:
@@ -30,3 +33,18 @@ flutter:
   assets:
     # Add assets from the images directory to the application.
     - assets/images/
+# run: flutter clean && flutter pub get && flutter pub run flutter_native_splash:create
+flutter_native_splash:
+  color: "#0277bd"
+  image: assets/splashnew.png
+  android: true
+  ios: true
+
+  # color: "#ffffff"
+  # image: assets/splash_full.png
+  # color_dark: "#1a1a1a"
+  # image_dark: assets/splash_full.png
+  # android: true
+  # ios: true
+  # android_gravity: fill
+  # ios_content_mode: scaleAspectFill
