@@ -2,8 +2,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_yandex_mobile_ads/banner.dart';
-import 'package:flutter_yandex_mobile_ads/yandex.dart';
+// import 'package:flutter_yandex_mobile_ads/banner.dart';
+// import 'package:flutter_yandex_mobile_ads/yandex.dart';
 import 'package:intl/intl.dart';
 import 'package:melkalk/src/settings/settings_controller.dart';
 
@@ -91,7 +91,7 @@ class _MainScreenState extends State<MainScreen> {
   initState() {
     super.initState();
 
-    Yandex.initialize();
+    // Yandex.initialize();
     // myBanner = BannerAd(
     //   // adUnitId: 'ca-app-pub-3940256099942544/6300978111',
     //   // adUnitId: 'ca-app-pub-5030843222424346/3066642380 Для андроид',
@@ -424,13 +424,13 @@ class _MainScreenState extends State<MainScreen> {
 
   Container adBuner() {
     return Container(
-      alignment: Alignment.center,
-      child: YandexBanner(
-        adUnitId: "R-M-2196377-1",
-        size: YandexBannerSize.stickySize(MediaQuery.of(context).size.width.toInt()),
-      ),
-      color: Colors.blue,
-       height: 50,
+      // alignment: Alignment.center,
+      // child: YandexBanner(
+      //   adUnitId: "R-M-2196377-1",
+      //   size: YandexBannerSize.stickySize(MediaQuery.of(context).size.width.toInt()),
+      // ),
+      // color: Colors.blue,
+      //  height: 50,
       // height: myBanner.size.height.toDouble(),
     );
   }
